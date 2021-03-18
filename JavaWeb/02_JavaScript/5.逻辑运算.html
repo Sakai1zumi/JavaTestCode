@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        /*
+        在JavaScript语言中，所有的变量都可以作为一个boolean类型的变量使用
+        0、null、undefined、""（空字符串）都认为是false
+         */
+
+        var a = "abc";
+        var b = true;
+        var c = null;
+        var d = false
+
+        /*
+        && 且运算：
+        1. 当表达式全为真时，返回最后一个表达式的值
+        2. 当表达式中不全为真时，返回第一个为假的表达式
+         */
+        // alert(a && b);//true
+        // alert(b && a);//"abc"
+        // alert(a && d);//false
+        // alert(a && c);//null
+
+        /*
+        || 或运算：
+        1. 当表达式全为假时，返回最后一个表达式的值
+        2. 当表达式中不全为假时，返回第一个为真的表达式
+         */
+        alert(d || c);//null
+        alert(c || d);//false
+        alert(a || c);//"abc"
+        alert(b || c);//true
+    </script>
+</head>
+<body>
+
+</body>
+</html>

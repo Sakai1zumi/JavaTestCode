@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        //静态注册表单提交事件
+        function onsubmitFunc(){
+            //要验证所有表单项是否合法，若发现不合法就阻止提交
+            alert("静态注册表单提交事件--不合法");
+            return false;
+        }
+        //动态注册表单提交事件
+        window.onload = function (){
+            //1. 获取标签对象
+            var formObj = document.getElementById("form1");
+            //2. 通过标签对象.事件名 = function(){}
+            formObj.onsubmit = function () {
+                //要验证所有表单项是否合法，若发现不合法就阻止提交
+                alert("动态注册表单提交事件--不合法");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="http://localhost:8080/" method="get" onsubmit="return onsubmitFunc()">
+        <input type="submit" value="静态注册"/><br/>
+    </form>
+    <form action="http://localhost:8080/" id="form1">
+        <input type="submit" value="动态注册"/>
+    </form>
+</body>
+</html>

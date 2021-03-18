@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function (){
+            //使用JavaScript代码创建html标签，并显示在页面上
+            var divElement = document.createElement("div");//内存中 <div></div>
+
+            var textNode = document.createTextNode("测试创建标签");//文本对象 #测试创建标签
+
+            divElement.appendChild(textNode);//<div>测试创建标签</div>
+            //divElement.innerHTML = "测试创建标签";//<div>测试创建标签</div> 仍只存在内存中
+
+            //添加子元素
+            document.body.appendChild(divElement);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

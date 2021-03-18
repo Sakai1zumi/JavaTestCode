@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        //检查字符串中，是否包含字母e
+        // var patt = new RegExp("e");
+        // var patt = /e/;// / /也是正则表达式对象
+        //检查字符串中，是否包含字母a或b或c
+        // var patt = /[abc]/;
+        //检查字符串中，是否包含小写字母
+        // var patt = /[a-z]/;
+        //检查字符串中，是否包含大写字母
+        // var patt = /[A-Z]/;
+        //检查字符串中，是否包含任意数字
+        // var patt = /[0-9]/;
+        //检查字符串中，是否包含字母，数字，下划线
+        // var patt = /\w/;
+        //检查字符串中，是否包含最少一个a
+        // var patt = /a+/;
+        //检查字符串中，是否包含零个或多个a
+        // var patt = /a*/;
+        //检查字符串中，是否包含一个或零个a
+        // var patt = /a?/;
+        //检查字符串中，是否包含连续三个a
+        // var patt = /a{3}/;
+        //检查字符串中，是否包含至少三个连续的a，最多五个连续的a
+        // var patt = /a{3,5}/;
+        //检查字符串中，是否包含至少三个连续的a
+        // var patt = /a{3,}/;
+        //检查字符串是否以a结尾
+        // var patt = /a$/;
+        //检查字符串是否以a开始
+        // var patt = /^a/;
+
+        //检查字符串中，是否**包含**至少三个连续的a，最多五个连续的a
+        // var patt = /a{3,5}/;
+        //要求整个字符串从头到尾都必须严格匹配规则
+        // var patt = /^a{3,5}$/;
+
+        var patt = /^\w{5,12}$/;
+
+        var str = "aaaab]]]";
+        alert(patt.test(str));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

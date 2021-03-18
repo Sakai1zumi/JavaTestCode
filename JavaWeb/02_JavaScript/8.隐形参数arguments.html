@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function fun(a){
+            alert(arguments.length);
+
+            alert(arguments[0]);
+            alert(arguments[1]);
+            alert(arguments[2]);
+            alert(arguments[3]);//undefined
+
+            alert("a = " + a);
+
+            for(var i = 0;i < arguments.length;i++){
+                alert(arguments[i]);
+            }
+        }
+        // fun(1,"ac",true);
+
+        //编写一个函数，计算所有参数的和
+        function sum(num1,num2){
+            var result = 0;
+            for (var i = 0;i < arguments.length;i++){
+                if(typeof (arguments[i]) == "number")
+                    result += arguments[i];
+            }
+            return result;
+        }
+        alert( sum(1,2,3,4,5,"abc",6,7,8,9) );
+    </script>
+</head>
+<body>
+
+</body>
+</html>

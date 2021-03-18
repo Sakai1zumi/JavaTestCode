@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        /*
+        函数有两种定义方式
+         */
+        //方式一：使用function关键字定义函数
+        //定义无参函数
+        function fun(){
+            alert("无参函数")
+        }
+        //调用函数
+        // fun();
+        //定义有参函数
+        function fun1(a,b){
+            alert("有参函数：a = " + a + ",b = " + b);
+        }
+        // fun1(1,"abc");
+        //定义带有返回值的函数
+        function fun2(num1,num2){
+            return num1 + num2;
+        }
+        // alert(fun2(1,2));
+
+        //方式二：使用 var 函数名=function(){} 定义函数
+        var fun3 = function (){
+            alert("无参函数")
+        }
+        // fun3();
+        var fun4 = function (a,b) {
+            alert("有参函数：a = " + a + ",b = " + b);
+        }
+        // fun4(1,"abc");
+        var fun5 = function (num1,num2) {
+            return num1 + num2;
+        }
+        // alert(fun5(1,2));
+        var fun4 = function (){
+            alert("测试函数重载");
+        }
+        //JavaScript不允许函数重载，会直接覆盖掉上一次函数的定义
+        fun4(1,"abc");//测试函数重载
+    </script>
+</head>
+<body>
+
+</body>
+</html>
