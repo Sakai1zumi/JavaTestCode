@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<books>
+    <book id="SN123123413241">
+        <name>Java从入门到入坟1</name>
+        <author>作者1</author>
+        <price>9.9</price>
+    </book>
+    <book id="SN123123413457">
+        <name>Java从入门到入坟2</name>
+        <author>作者2</author>
+        <price>19.9</price>
+    </book>
+</books>

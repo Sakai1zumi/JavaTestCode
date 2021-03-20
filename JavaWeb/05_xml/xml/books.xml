@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xml声明 version是版本的意思   encoding是编码  -->
+<books>
+    <book id="SN123123413241"><!--book标签描述一本图书，id属性为图书的编号-->
+        <name>Java从入门到入坟1</name><!--name标签：图书的名称-->
+        <author>作者1</author><!--author标签：图书的作者-->
+        <price>9.9</price><!--price标签：图书的价格-->
+    </book>
+    <book id="SN123123413457"><!--book标签描述一本图书，id属性为图书的编号-->
+        <name>Java从入门到入坟2</name><!--name标签：图书的名称-->
+        <author>作者2</author><!--author标签：图书的作者-->
+        <price>19.9</price><!--price标签：图书的价格-->
+    </book>
+</books>
