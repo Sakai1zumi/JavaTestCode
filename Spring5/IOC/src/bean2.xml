@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.th1024.bean.User">
+        <!--有参构造器注入属性-->
+        <constructor-arg name="name" value="枫花恋"></constructor-arg>
+        <constructor-arg name="gender" value="女"></constructor-arg>
+        <!--属性值包含特殊符号-->
+        <property name="city">
+            <value><![CDATA[<<东京>>]]></value>
+        </property>
+    </bean>
+</beans>
