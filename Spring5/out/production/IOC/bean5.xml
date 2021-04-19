@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util  http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--提取list集合类型属性注入-->
+    <util:list id="BookList">
+        <value>Java从入门到放弃</value>
+        <value>C++从入门到入土</value>
+    </util:list>
+
+
+    <!--集合类型属性注入-->
+    <bean id="stu" class="com.th1024.bean.Stu">
+        <!--数组类型属性注入-->
+        <property name="courses">
+            <array>
+                <value>Java</value>
+                <value>C++</value>
+            </array>
+        </property>
+
+        <!--list类型属性注入-->
+        <!--<property name="list1">
+            <list>
+                <value>Java从入门到入土</value>
+                <value>C++从入门到放弃</value>
+            </list>
+        </property>-->
+
+        <!--提取list集合类型属性注入使用-->
+        <property name="list1" ref="BookList"></property>
+
+        <!--list集合注入对象-->
+        <property name="list2">
+            <list>
+                <ref bean="course1"></ref>
+                <ref bean="course2"></ref>
+            </list>
+        </property>
+
+        <!--map类型属性注入-->
+        <property name="maps">
+            <map>
+                <entry key="JAVA" value="java"></entry>
+                <entry key="PHP" value="php"></entry>
+            </map>
+        </property>
+        <!--set类型属性注入-->
+        <property name="sets">
+            <set>
+                <value>MySQL</value>
+                <value>Redis</value>
+            </set>
+        </property>
+    </bean>
+
+    <bean id="course1" class="com.th1024.bean.Course">
+        <property name="name" value="Spring5框架"></property>
+    </bean>
+    <bean id="course2" class="com.th1024.bean.Course">
+        <property name="name" value="MyBatis框架"></property>
+    </bean>
+
+
+
+
+</beans>

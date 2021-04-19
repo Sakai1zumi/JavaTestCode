@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置User对象创建-->
+    <bean id="user" class="com.th1024.bean.User">
+        <!--set方法注入属性-->
+        <!--使用property完成属性注入
+            name：类中属性名称
+            value：向属性注入的值
+        -->
+        <property name="name" value="三上悠亚"></property>
+        <property name="gender" value="女"></property>
+    </bean>
+</beans>

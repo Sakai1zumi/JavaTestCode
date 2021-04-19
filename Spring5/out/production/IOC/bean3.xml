@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--外部bean-->
+    <bean id="userService" class="com.th1024.service.UserService">
+        <!--向UserDAO对象注入属性值-->
+        <property name="dao" ref="userDAOImpl"></property>
+    </bean>
+    <bean id="userDAOImpl" class="com.th1024.dao.UserDAOImpl"></bean>
+</beans>
