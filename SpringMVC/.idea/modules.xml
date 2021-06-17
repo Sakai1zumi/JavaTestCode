@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1_ HelloWorld/1_ HelloWorld.iml" filepath="$PROJECT_DIR$/1_ HelloWorld/1_ HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2_SpringMVC-viewResolver/2_SpringMVC-viewResolver.iml" filepath="$PROJECT_DIR$/2_SpringMVC-viewResolver/2_SpringMVC-viewResolver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_RestfulCRUD/3_RestfulCRUD.iml" filepath="$PROJECT_DIR$/3_RestfulCRUD/3_RestfulCRUD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC.iml" filepath="$PROJECT_DIR$/SpringMVC.iml" />
+    </modules>
+  </component>
+</project>
